@@ -136,6 +136,20 @@ img{
     cursor: pointer;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
+.background-image-supporting-brands{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1rem;
+}
+
 .background-image{
     background-image: url(/Images/Background\ Image\.jpg);
     background-size: cover;
@@ -285,7 +299,7 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem 0 2rem;
+    /* padding: 0 2rem 0 2rem; */
     
 }
 
@@ -299,26 +313,6 @@ img{
     width: 100%;
     height: auto;
 }
-
-/* .clustured-frames{
-    width: 60%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    flex-shrink: -10.5rem;
-} */
-
-/* .right-image{
-    width: fit-content;
-    height: auto;
-}
-
-.right-image img{
-    width: 100%;
-    height: auto;
-} */
 
 .supporting-brands{
     width: 100%;
@@ -418,16 +412,59 @@ img{
         column-gap: 1rem;
     }
 
+    .header-links{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .background-image{
+        background-image: url(/Images/Background\ Image\.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 2rem;
+    }   
+
     .hero-section{
-        width: 80%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         row-gap: 1.875rem;
-        padding-top: 4.375rem;
+        padding: 3rem 2rem 2rem 2rem;
     }
+
+    .hero-section-top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3.438rem;
+    }
+    
+    .heading-body-text{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.938rem;
+    }
+    
 
     .supporting-brands{
         width: 100%;
@@ -436,18 +473,44 @@ img{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        column-gap: 1.5rem;
+        column-gap: 0.875rem;
     }
 
     .brands{
-        width: 70%;
+        width: 80%;
         height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         column-gap: 1rem;
     }
+
+    .ui-path img{
+        width: 6rem;
+        height: auto;
+    }
+    
+    .power-path img{
+        width: 8rem;
+        height: auto;
+    }
+    
+    .power-bi img{
+        width: 6rem;
+        height: auto;
+    }
+    
+    .chat-gpt img{
+        width: 3rem;
+        height: auto;
+    } 
+    
+    .microsoft-teams img{
+        width: 8rem;
+        height: auto;
+    }
+    
 }
 
 
@@ -456,5 +519,207 @@ img{
 
 /* Small Devices */
 @media screen and (max-width:480px){
+    .main-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-color: white;
+    }
 
+    .header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-bottom: 1px solid rgba(234, 234, 234, 0.6);
+    }
+
+    .logo-nav-links{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    .brand-logo{
+        width: fit-content;
+        height: auto;
+    }
+    
+    .brand-logo img{
+        width: 100px;
+        height: auto;
+    }
+
+    .hamburger-menu{
+        display: block;
+        color: black;
+        font-size: 28px;
+    }
+
+    .header-links{
+        display: none;
+    }
+
+    .buttons{
+        display: none;
+    }
+
+    .background-image{
+        background-image: url(/Images/Background\ Image\.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 2rem;
+    }   
+
+    .hero-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.875rem;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .hero-section-top{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    
+    .heading-body-text{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.938rem;
+    }
+
+    .heading-text h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        color: #000000;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .body-text{
+        width: 88%;
+        height: auto;
+    }
+    
+    .body-text p{
+        font-size: 1rem;
+        color: rgba(51, 51, 51, 0.6);
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-bottom{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1.25rem;
+    }
+    
+    .bottom-texts{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        column-gap: 0.625rem;
+    }
+    
+    .bottom-texts img{
+        width: 16px;
+        height: 16px;
+    }
+    
+    .bottom-texts p{
+        width: fit-content;
+        height: auto;
+        color: rgba(51, 51, 51, 0.5);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    .frames-flows{
+        display: none;
+    }
+
+    .supporting-brands{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 0.875rem;
+    }
+
+    .brands{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .ui-path img{
+        width: 7.938rem;
+        height: 5rem;
+    }
+    
+    .power-path img{
+        width: 10.375rem;
+        height: auto;
+    }
+    
+    .power-bi img{
+        width: 8.25rem;
+        height: auto;
+    }
+    
+    .chat-gpt img{
+        width: 3.875rem;
+        height: auto;
+    } 
+    
+    .microsoft-teams img{
+        width: 12.615rem;
+        height: auto;
+    }
 }
