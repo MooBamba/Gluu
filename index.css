@@ -28,6 +28,9 @@
     padding: 1rem 1.875rem 1rem 1.875rem;
     background-color: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid rgba(234, 234, 234, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-nav-links{
@@ -400,6 +403,9 @@ img{
         padding: 1rem 1.875rem 1rem 1.875rem;
         background-color: rgba(255, 255, 255, 0.9);
         border-bottom: 1px solid rgba(234, 234, 234, 0.6);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     .logo-nav-links{
@@ -539,6 +545,10 @@ img{
         padding: 1rem 1rem 1rem 1rem;
         background-color: rgba(255, 255, 255, 0.9);
         border-bottom: 1px solid rgba(234, 234, 234, 0.6);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        
     }
 
     .logo-nav-links{
